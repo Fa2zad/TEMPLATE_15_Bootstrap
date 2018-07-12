@@ -3,3 +3,28 @@
 // Used by: Page.scss
 // Dependencies:
 // ------------------------------------------------------------
+body footer{
+    background: #3d3a33;
+    padding: 25px;
+    color: #646464;
+
+    nav ul li{
+         
+            list-style: none;
+            display: inline;
+            margin: 10px;
+            float: right;
+            a{
+                color: #959595;
+                font-size: 10px;
+                font-weight: 100;
+                &:hover{
+                    text-decoration: none;
+                    color: #cccccc;
+                }
+            }
+        
+    }
+}
+
+ 

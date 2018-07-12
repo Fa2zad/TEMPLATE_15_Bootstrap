@@ -3,3 +3,112 @@
 // Used by: Page.scss
 // Dependencies:
 // ------------------------------------------------------------
+.icon-bar { 
+    background-color: #4d4d4d; 
+}
+header .navbar {
+    z-index: 1000;
+    background: white;
+    a img{
+        height: 114px;
+    }
+    a{
+        color:#3e3e3e;
+    }
+
+    ul {
+        margin-top: 64px;
+        margin-right: -35px;
+        float: right;
+    }
+    form{
+        top: 0;
+        right: 0;
+        position: absolute;
+        padding: 0;
+        
+        .search-input{
+            border: 1px solid #b8c7d0;
+            border-radius: 0;
+            width: 172px !important;
+            font-family: Tahoma;
+            font-size: 12px;
+
+            // ------------placeholder text color
+            &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                color:    #bfbfbf;
+            }
+            &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+               color:    #bfbfbf;
+               opacity:  1;
+            }
+            &::-moz-placeholder { /* Mozilla Firefox 19+ */
+               color:    #bfbfbf;
+               opacity:  1;
+            }
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+               color:    #bfbfbf;
+            }
+            &::-ms-input-placeholder { /* Microsoft Edge */
+               color:    #bfbfbf;
+            }
+            
+            &::placeholder { /* Most modern browsers support this now. */
+               color:    #bfbfbf;
+            }
+        }
+    }
+    .search-icon{
+        float: left;
+        position: absolute;
+        left: 0px;
+        z-index: 4;
+        top: 2px;
+    }
+}
+
+
+body > header{
+  background: white;
+  height: 120px;
+  border-bottom: 4px solid #87bd25;
+}
+
+
+@media (max-width:  992px){
+    header .nav>li>a {
+        font-size: 15px;
+        padding: 10px 7px;
+    }
+}
+
+@media (max-width:  767px){
+     body > header{
+
+        height: 56px;
+
+        .navbar .navbar-left img {
+            height: 50px;
+        }
+
+
+        ul.navbar-nav {
+        margin: 7.5px -15px !important;
+        float: unset !important;
+        }
+
+        form.navbar-form{
+            top: unset;
+            right: unset;
+            position: unset;
+        }
+    }
+     
+}
+
+@media (min-width: 767px){
+    header ul.navbar-nav li {
+    float: right !important;
+    }
+}
+

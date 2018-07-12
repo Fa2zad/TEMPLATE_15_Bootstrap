@@ -3,3 +3,140 @@
 // Used by: Page.scss
 // Dependencies:
 // ------------------------------------------------------------
+body{
+    font-size: 16px;
+    font-family: Vazir;
+    color: #3e3e3e;
+}
+
+.container {
+    max-width: 1000px;
+}
+.content__container{
+
+    text-align: left;
+    padding: 30px;
+    padding-bottom: 0px;
+
+    a{
+        color:#3e3e3e;
+        text-decoration: none;
+        line-height: 40px
+    }
+
+    .row > div{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .content-camera{
+        background: #fa6800;
+        &:hover{
+            content: url('../images/camera-hover.png');
+            background: white;
+            transition-duration: 500ms;
+
+        }
+    }
+
+    .content-network{
+        background: #1ba1e2;
+        &:hover{
+            content: url('../images/network-hover.png');
+            background: white;
+            transition-duration: 500ms;
+
+
+        }
+    }
+    
+    .content-fire{
+        background: #9f00c4;
+        &:hover{
+            content: url('../images/fire-hover.png');
+            background: white;
+            transition-duration: 500ms;
+
+        }
+    }
+    
+    .content-wireless{
+        background: #d80073;
+        &:hover{
+            content: url('../images/wireless-hover.png');
+            background: white;
+            transition-duration: 500ms;
+
+
+        }
+    }
+
+    .content-products{
+        background: #b617d3;
+        &:hover{
+            content: url('../images/products-hover.png');
+            background: white;
+            transition-duration: 500ms;
+
+        }
+        
+    }
+
+    .content-cv{
+        background: #4fc736;
+        &:hover{
+            content: url('../images/cv-hover.png');
+            background: white;
+            transition-duration: 500ms;
+
+        }
+    }
+
+    .content-about{
+        background: #fe9f09;
+        &:hover{
+            content: url('../images/about-hover.png');
+            background: white;
+            transition-duration: 500ms;
+
+        }
+    }
+
+    .content-contact{
+        background: #c40023;
+        &:hover{
+            content: url('../images/contact-hover.png');
+            background: white;
+            transition-duration: 500ms;
+
+
+        }
+    }
+
+    
+}
+
+.products__container{
+        background: #f1f1f1;
+        h2{
+            font-size: 20px;
+            margin: 0;
+            padding: 13px 0px;
+            display: inline-block;
+            border-bottom: 4px solid #87bd25;
+        }
+
+        hr{
+            margin: 0;
+            border: 1px solid #cfcfcf;
+            padding: 0px;
+        }
+        &>div>div{
+            font-size: 11px;
+            padding: 20px 0;
+            font-family: Tahoma;
+        }
+}
+
