@@ -1,5 +1,8 @@
-//main navigation items responsive
+//--------------------------------//
+//        max-width:  992px       //
+//--------------------------------//
 @media (max-width:  992px){
+    //main navigation items responsive
     .container__header .navbar ul{
         margin-top: 76px;
         &>li>a {
@@ -18,6 +21,9 @@
     }
 }
 
+//--------------------------------//
+//        max-width:  767px      //
+//--------------------------------//
 @media (max-width:  767px){
     .container__header{
         height: 56px;
@@ -44,6 +50,10 @@
     }
 }
 
+
+//--------------------------------//
+//         min-width: 767px       //
+//--------------------------------//
 @media (min-width: 767px){
     .container__header ul.navbar-nav li {
         float: right !important;
