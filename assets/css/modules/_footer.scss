@@ -3,28 +3,88 @@
 // Used by: Page.scss
 // Dependencies:
 // ------------------------------------------------------------
-body footer{
+.footer__container{
     background: #3d3a33;
-    padding: 25px;
+    padding: 25px 0px 10px;
     color: #646464;
+    font-size: 11px;
+    font-family: Tahoma;
 
-    nav ul li{
-         
-            list-style: none;
-            display: inline;
-            margin: 10px;
-            float: right;
-            a{
-                color: #959595;
-                font-size: 10px;
-                font-weight: 100;
-                &:hover{
-                    text-decoration: none;
-                    color: #cccccc;
+
+    .footer-right{
+        nav{
+
+            ul li{
+             
+                list-style: none;
+                display: inline;
+                margin: 10px;
+                float: right;
+                a{
+                    color: #959595;
+                    &:hover{
+                        text-decoration: none;
+                        color: #cccccc;
+                    }
                 }
             }
-        
+            
+        }
     }
+
+
+    .footer-left{
+        nav{
+            //display: flex;
+            ul{
+                padding: 0px;
+                li{
+                    list-style-type: none;
+                    width: 23px;
+                    height: 23px;
+                    display: inline-block;
+                    img{
+                            position: absolute;
+                            transition: 200ms;
+                            &:hover{
+                                
+                                opacity: 0.5;
+                                
+                            }
+
+                            &.facebook{
+                                clip: rect(0px, 23px, 23px, 0px);
+
+                            }
+                            &.twitter{
+                                clip: rect(0px, 49px, 23px, 25px);
+                                margin-left: -24px;
+                            }
+                            &.gplus{
+                                clip: rect(0px, 73px, 23px, 50px);
+                                margin-left: -48px;
+
+                            }
+                            &.youtube{
+                                clip: rect(0px, 99px, 23px, 76px);
+                                margin-left: -73px;
+                            }
+                            &.rss{
+                                clip: rect(0px, 124px, 23px, 101px);
+                                margin-left: -97px;
+                            }
+                    }
+                }
+            }
+        }
+        p{
+
+
+        }
+    }
+    
+
+    
 }
 
  
