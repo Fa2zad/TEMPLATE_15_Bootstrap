@@ -217,6 +217,7 @@ body {
   left: 0px;
   z-index: 4;
   top: 2px;
+  cursor: pointer;
 }
 
 .footer__container {
