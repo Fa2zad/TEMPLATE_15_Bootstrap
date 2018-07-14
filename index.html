@@ -9,25 +9,13 @@
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <style>
-            /* Remove the navbar's default margin-bottom and rounded borders */ 
-            /* .navbar {
-              margin-bottom: 0;
-              border-radius: 0;
-            }
-            
-            /* Add a gray background color and some padding to the footer */
-            /* footer {
-              background-color: #f2f2f2;
-              padding: 25px;
-            } */ 
-          </style>
 </head>
+
 <body>
-    <header>
+    <!-- Header -->
+    <header class="container__header">
         <div class="container">
-            
-    
+            <!-- Mian menu -->
             <nav class="navbar">
                 <div class="container-fluid">
                 
@@ -39,11 +27,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                        <!-- <a class="navbar-brand" href="#">
-                            <img class="img-responsive" src="assets/images/logo.png" width="220" alt="Brand name" />
-                        </a> -->
 
-                        <a href="#" class="navbar-left"><img src="assets/images/logo.png" alt="Pezhvak co."></a>
+                        <a href="index.html" class="navbar-left"><img src="assets/images/logo.png" alt="Pezhvak co."></a>
                     </div>
                     
                     <!-- COLLAPSIBLE NAVBAR -->
@@ -51,13 +36,12 @@
                     
                     <!-- Links -->
                         <ul class="nav navbar-nav text-right">
-                        <li class="active"><a href="#">صفحه نخست <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">وبلاگ دسته بندی ها</a></li>
-                        <li><a href="#">ویکی انرژی</a></li>
-                        <li><a href="#">تبلیغات</a></li>
-                        <li><a href="#">خدمات</a></li>
-                        <li><a href="#">فروشگاه</a></li>
-
+                            <li class="active"><a href="#">صفحه نخست <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">وبلاگ دسته بندی ها</a></li>
+                            <li><a href="#">ویکی انرژی</a></li>
+                            <li><a href="#">تبلیغات</a></li>
+                            <li><a href="#">خدمات</a></li>
+                            <li><a href="#">فروشگاه</a></li>
                         </ul>
                         
                         <!-- Search -->
@@ -65,46 +49,32 @@
 
                             <div class="form-group">
                                 <div class="input-group">
-                                    <!-- <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span> -->
                                     <img class="search-icon" src="assets/images/srch.png">
                                     <input type="text" class="form-control search-input" placeholder="جستجو..." aria-describedby="start-date">
                                 </div>
                             </div>
 
                         </form>
-
-                    
-                    </div>
-                
-                </div>
+                    </div><!-- COLLAPSIBLE NAVBAR -->
+                </div><!-- container-fluid -->
             </nav>
-    
-            
-        </div>
-        
+        </div><!-- container -->
     </header>
 
-    <!--Carousel -->
+    <!-- Slider -->
     <section id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <!-- <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol> -->
-        
-            <!-- Wrapper for slides -->
+            <!-- Container for slides -->
             <div class="carousel-inner">
               <div class="item active">
-                <img src="assets/images/slider1.jpg" alt="Los Angeles" style="width:100%;">
+                    <a href="#"><img src="assets/images/slider1.jpg" alt="slider1"></a>
               </div>
         
               <div class="item">
-                <img src="assets/images/slider2.jpg" alt="Chicago" style="width:100%;">
+                    <a href="#"><img src="assets/images/slider2.jpg" alt="slider2"></a>
               </div>
             
               <div class="item">
-                <img src="assets/images/slider3.jpg" alt="New york" style="width:100%;">
+                    <a href="#"><img src="assets/images/slider3.jpg" alt="slider3"></a>
               </div>
             </div>
         
@@ -119,68 +89,69 @@
             </a>
     </section>
         
-    
+    <!-- Main content Section -->
     <section class="container content__container text-center ">    
         <div class="row">
             <!-- دوربین مداربسته -->
             <div class="col-sm-3">
                 <a href="#" alt="دوربین مداربسته">
-                    <img class="img-responsive img-fluid content-camera" src="assets/images/camera.png" style="width:100%" alt="Image">
+                    <img class="img-responsive img-fluid content-camera" src="assets/images/camera.png" alt="Image">
                 </a>
                 <a href="#">دوربین مداربسته</a>
             </div>
             <!-- شبکه های کامپیوتری -->
             <div class="col-sm-3">
                 <a href="#" alt="شبکه های کامپیوتری">
-                    <img class="img-responsive content-network" src="assets/images/network.png"  style="width:100%" alt="Image">
+                    <img class="img-responsive content-network" src="assets/images/network.png"  alt="Image">
                 </a>
                 <a href="#">شبکه های کامپیوتری</a>
             </div>
             <!-- سیستم های اعلام و اطفاء حریق -->
             <div class="col-sm-3">
                 <a href="#" alt="سیستم های اعلام و اطفاء حریق">
-                    <img class="img-responsive content-fire" src="assets/images/fire.png" style="width:100%" alt="Image">
+                    <img class="img-responsive content-fire" src="assets/images/fire.png" alt="سیستم های اعلام و اطفاء حریق">
                 </a>
                 <a href="#">سیستم های اعلام و اطفاء حریق</a>
             </div>
             <!-- لینک های وایرلس (ارتباط نقطه به نقطه) -->
             <div class="col-sm-3">
                 <a href="#" alt="لینک های وایرلس (ارتباط نقطه به نقطه)">
-                    <img class="img-responsive content-wireless" src="assets/images/wireless.png" style="width:100%" alt="Image">
+                    <img class="img-responsive content-wireless" src="assets/images/wireless.png" alt="لینک های وایرلس">
                 </a>
                 <a href="#">لینک های وایرلس (ارتباط نقطه به نقطه)</a>
             </div>
             <!-- محصولات -->
             <div class="col-sm-3">
                 <a href="#" alt="محصولات">
-                    <img class="img-responsive content-products" src="assets/images/products.png" style="width:100%" alt="Image">
+                    <img class="img-responsive content-products" src="assets/images/products.png" alt="محصولات">
                 </a>
                 <a href="#">محصولات</a>
             </div>
             <!-- رزومه گروه پژواک -->
             <div class="col-sm-3">
                 <a href="#" alt="رزومه گروه پژواک">
-                    <img class="img-responsive content-cv" src="assets/images/cv.png" style="width:100%" alt="Image">
+                    <img class="img-responsive content-cv" src="assets/images/cv.png" alt="رزومه گروه پژواک">
                 </a>
                 <a href="#">رزومه گروه پژواک</a>
             </div>
             <!-- درباره گروه پژواک -->
             <div class="col-sm-3">
                 <a href="#" alt="درباره گروه پژواک">
-                    <img class="img-responsive content-about" src="assets/images/about.png" style="width:100%" alt="Image">
+                    <img class="img-responsive content-about" src="assets/images/about.png" alt="درباره گروه پژواک">
                 </a>
                 <a href="#">درباره گروه پژواک</a>
             </div>
             <!-- تماس باگروه پژواک -->
             <div class="col-sm-3">
                 <a href="#" alt="تماس باگروه پژواک">
-                    <img class="img-responsive content-contact" src="assets/images/contact.png" style="width:100%" alt="Image">
+                    <img class="img-responsive content-contact" src="assets/images/contact.png" alt="تماس باگروه پژواک">
                 </a>
                 <a href="#">تماس باگروه پژواک</a>
             </div>
         </div>
     </section>
-
+    
+    <!-- Products section -->
     <section class="products__container">
         <div class="container">
                 <h2>محصولات</h2>
@@ -203,11 +174,12 @@
         </div>
         
     </section>
-    
+
+    <!-- Footer -->
     <footer class="container-fluid footer__container">
         <div class="container">
             <div class="col-sm-6 text-right footer-right" >
-                <a href="index.html" alt="پژواک" title="پژواک"><img class="text-right" src="assets/images/footer-logo.png" alt=""></a>
+                <a href="index.html"  title="پژواک"><img class="text-right" src="assets/images/footer-logo.png" alt="پژواک"></a>
                 <nav>
                     <ul>
                         <li><a href="#">صفحه نخست</a></li>
@@ -216,7 +188,9 @@
                     </ul>
                 </nav>
             </div>
+            <!---->
             <div class="col-sm-6 text-left footer-left">
+                <!-- Social links -->
                 <nav>
                     <ul>
                         <li><a href="#"><img src="assets/images/social.png" alt="facebook" class="facebook"></a></li>
@@ -226,6 +200,8 @@
                         <li><a href="#"><img src="assets/images/social.png" alt="rss" class="rss"></a></li>
                     </ul>
                 </nav>
+
+                <!-- Copyright -->
                 <p>
                     کلیه حقوق این وب سایت محفوظ می باشد <br />
                     Copytight &copy; 2018 - All rights reserved. <br />

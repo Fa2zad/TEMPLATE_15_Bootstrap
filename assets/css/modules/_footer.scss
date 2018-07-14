@@ -4,87 +4,73 @@
 // Dependencies:
 // ------------------------------------------------------------
 .footer__container{
-    background: #3d3a33;
+    background: $footerBackgroundColor;
     padding: 25px 0px 10px;
-    color: #646464;
+    color: $footerTextColor;
     font-size: 11px;
-    font-family: Tahoma;
+    font-family: $footerFont;
 
+    /* footer right */
+    .footer-right  nav{
+        display: inline-block;
+        width: 100%;
 
-    .footer-right{
-        nav{
-
-            ul li{
-             
-                list-style: none;
-                display: inline;
-                margin: 10px;
-                float: right;
-                a{
-                    color: #959595;
-                    &:hover{
-                        text-decoration: none;
-                        color: #cccccc;
-                    }
+        ul li{
+            list-style: none;
+            display: inline;
+            margin: 10px;
+            float: right;
+            a{
+                color: $footerLinkColor;
+                &:hover{
+                    text-decoration: none;
+                    color: $footerHoverLinkColor;
                 }
             }
-            
         }
     }
 
-
+    /* footer left */
     .footer-left{
-        nav{
-            //display: flex;
-            ul{
-                padding: 0px;
-                li{
-                    list-style-type: none;
-                    width: 23px;
-                    height: 23px;
-                    display: inline-block;
-                    img{
-                            position: absolute;
-                            transition: 200ms;
-                            &:hover{
-                                
-                                opacity: 0.5;
-                                
-                            }
+        padding: 0px;
+        
+        li{ /*social icons*/
+            list-style-type: none;
+            width: 23px;
+            height: 23px;
+            display: inline-block;
 
-                            &.facebook{
-                                clip: rect(0px, 23px, 23px, 0px);
-
-                            }
-                            &.twitter{
-                                clip: rect(0px, 49px, 23px, 25px);
-                                margin-left: -24px;
-                            }
-                            &.gplus{
-                                clip: rect(0px, 73px, 23px, 50px);
-                                margin-left: -48px;
-
-                            }
-                            &.youtube{
-                                clip: rect(0px, 99px, 23px, 76px);
-                                margin-left: -73px;
-                            }
-                            &.rss{
-                                clip: rect(0px, 124px, 23px, 101px);
-                                margin-left: -97px;
-                            }
-                    }
+            img{
+                position: absolute;
+                transition: 200ms;
+                &:hover{
+                    opacity: 0.5;
                 }
-            }
-        }
-        p{
 
+                &.facebook{
+                    clip: rect(0px, 23px, 23px, 0px);
 
-        }
-    }
-    
+                }
+                &.twitter{
+                    clip: rect(0px, 49px, 23px, 25px);
+                    margin-left: -24px;
+                }
+                &.gplus{
+                    clip: rect(0px, 73px, 23px, 50px);
+                    margin-left: -48px;
 
-    
+                }
+                &.youtube{
+                    clip: rect(0px, 99px, 23px, 76px);
+                    margin-left: -73px;
+                }
+                &.rss{
+                    clip: rect(0px, 124px, 23px, 101px);
+                    margin-left: -97px;
+                }
+            }//img
+        }//li
+    }//.footer-left
 }
 
  

@@ -1,0 +1,51 @@
+//main navigation items responsive
+@media (max-width:  992px){
+    .container__header .navbar ul{
+        margin-top: 76px;
+        &>li>a {
+            font-size: 15px;
+            padding: 10px 7px;
+        }
+    }
+
+
+
+    .content__container img{ 
+        min-height: 108px;
+        &:hover{
+            box-shadow: inset 0 106px 0 0 white;
+        }
+    }
+}
+
+@media (max-width:  767px){
+    .container__header{
+        height: 56px;
+
+        .navbar .navbar-left img {
+            height: 50px;
+        }
+
+        ul.navbar-nav {
+            margin: 7.5px -15px !important;
+            float: unset !important;
+        }
+
+        form.navbar-form{
+            top: unset;
+            right: unset;
+            position: unset;
+        }
+    }
+     
+
+.content__container img:hover{ 
+        box-shadow: inset 0 460px 0 0 white;
+    }
+}
+
+@media (min-width: 767px){
+    .container__header ul.navbar-nav li {
+        float: right !important;
+    }
+}

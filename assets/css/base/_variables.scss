@@ -1,21 +1,34 @@
 // ----------------------------------------------------------------------
 	// Layout Breakpoints
 // ----------------------------------------------------------------------
-$maxWidth: 1280;
+$maxWidth: 1024px;
 
 
 // ----------------------------------------------------------------------
 	// Font Sizes
 // ----------------------------------------------------------------------
-$regularSize: 12;
+$regularSize: 16px;
 
 
 // ----------------------------------------------------------------------
 	// Font Families
 // ----------------------------------------------------------------------
-$helvetica: Georgia,Helvetica, Arial, sans-serif;
+$mainFont: Vazir, Tahoma, Arial, sans-serif;
+$footerFont: tahoma;
+
 
 // ----------------------------------------------------------------------
-  // Grid
+  // Default Colors
 // ----------------------------------------------------------------------
-$grid-columns: 12;
+$textColor: #3e3e3e;
+$ThemeColor: #87bd25;
+
+//search input
+$searchBorderColor: #b8c7d0;
+$searchPalaceholderColor: #bfbfbf;
+
+// footer
+$footerBackgroundColor: #3d3a33;
+$footerTextColor: #646464;
+$footerLinkColor: #959595;
+$footerHoverLinkColor: #cccccc;

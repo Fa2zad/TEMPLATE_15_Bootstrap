@@ -3,9 +3,7 @@
 // Used by: styles.scss
 // Dependencies:
 // ------------------------------------------------------------
-body{
-    //direction: rtl;
-}
+/*Header navigation item direction*/
 header .navbar {
     .form-control{
         direction: rtl;
@@ -13,7 +11,6 @@ header .navbar {
 }
 
 .content__container, .products__container{
-    //float: right;
     direction: rtl;
     text-align: right;
 }

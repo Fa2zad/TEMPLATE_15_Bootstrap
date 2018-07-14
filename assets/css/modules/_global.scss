@@ -1,27 +1,38 @@
 // File Name: _golbal.scss
 // Description: global styles
-// Used by: Page.scss
+// Used by: Styles.scss
 // Dependencies:
 // ------------------------------------------------------------
 body{
-    font-size: 16px;
-    font-family: Vazir;
-    color: #3e3e3e;
+    font-size: $regularSize; //vaiables from base/_variables.scss
+    font-family: $mainFont;
+    color: $textColor;
 }
 
 .container {
-    max-width: 1024px;
+    max-width: $maxWidth;
 }
+
 .content__container{
 
     text-align: left;
     padding: 30px;
     padding-bottom: 0px;
+    img{
+        width: 100%;
+        min-height: 152px;
+        transition-duration: 500ms;
+        &:hover{
+            box-shadow: inset 0 150px 0 0 white;
+
+        }
+    }
 
     a{
-        color:#3e3e3e;
+        color: $textColor;
         text-decoration: none;
-        line-height: 40px
+        line-height: 40px;
+        display: block;
     }
 
     .row > div{
@@ -35,9 +46,6 @@ body{
         background: #fa6800;
         &:hover{
             content: url('../images/camera-hover.png');
-            background: white;
-            transition-duration: 500ms;
-
         }
     }
 
@@ -45,10 +53,6 @@ body{
         background: #1ba1e2;
         &:hover{
             content: url('../images/network-hover.png');
-            background: white;
-            transition-duration: 500ms;
-
-
         }
     }
     
@@ -56,9 +60,6 @@ body{
         background: #9f00c4;
         &:hover{
             content: url('../images/fire-hover.png');
-            background: white;
-            transition-duration: 500ms;
-
         }
     }
     
@@ -66,10 +67,6 @@ body{
         background: #d80073;
         &:hover{
             content: url('../images/wireless-hover.png');
-            background: white;
-            transition-duration: 500ms;
-
-
         }
     }
 
@@ -77,9 +74,6 @@ body{
         background: #b617d3;
         &:hover{
             content: url('../images/products-hover.png');
-            background: white;
-            transition-duration: 500ms;
-
         }
         
     }
@@ -88,9 +82,7 @@ body{
         background: #4fc736;
         &:hover{
             content: url('../images/cv-hover.png');
-            background: white;
-            transition-duration: 500ms;
-
+            box-shadow: inset 0 150px 0 0 white;
         }
     }
 
@@ -98,7 +90,7 @@ body{
         background: #fe9f09;
         &:hover{
             content: url('../images/about-hover.png');
-            background: white;
+            box-shadow: inset 0 150px 0 0 white;
             transition-duration: 500ms;
 
         }
@@ -108,7 +100,7 @@ body{
         background: #c40023;
         &:hover{
             content: url('../images/contact-hover.png');
-            background: white;
+            box-shadow: inset 0 150px 0 0 white;
             transition-duration: 500ms;
 
 
@@ -125,7 +117,7 @@ body{
             margin: 0;
             padding: 13px 0px;
             display: inline-block;
-            border-bottom: 4px solid #87bd25;
+            border-bottom: 4px solid $ThemeColor;
         }
 
         hr{
